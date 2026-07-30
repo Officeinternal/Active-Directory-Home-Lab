@@ -35,6 +35,12 @@ Client: Windows 11
 - Hyper‑V
 - PowerShell
 
+**Links**
+
+- Hypervisor: https://www.virtualbox.org/
+- Windows 11: https://www.microsoft.com/en-us/software-download/windows11
+- Windows Server 2025: https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2025
+
 **Implementation**
 
 **Step 1:** Download hypervisor software (Oraclebox for this example):
@@ -46,7 +52,7 @@ Client: Windows 11
 ![Screenshot 2](screenshots/2.png)
 ![Screenshot 3](screenshots/3.png)
 
-**Step 3:** Create a VM for Windows Server (Be sure to enable efi and a Host-Only Adapter in network settings):
+**Step 3:** Create a VM for Windows Server (Configure this to enable efi and add a Host-Only Adapter in network settings):
 
 ![Screenshot 4](screenshots/4.png)
 ![Screenshot 5](screenshots/5.png)
@@ -70,7 +76,7 @@ Client: Windows 11
 $pass = Read-Host -AsSecureString "Enter SafeMode password"
 Install-ADDSForest -DomainName "[Insert domain name]" -SafeModeAdministratorPassword $pass -InstallDNS -Force*
 
-Or you can create AD and DC through server manager:
+Or you can create an Active Directory and Domain Controller through server manager:
 
 - Add Roles and Features:
 

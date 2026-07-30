@@ -26,6 +26,15 @@ Client: Windows 11
 - Join a Windows 11 workstation to the domain
 - Validate domain functionality
 
+**Technologies Used**
+
+- Windows Server 2025
+- Windows 11
+- Active Directory Domain Services (AD DS)
+- DNS
+- Hyper‑V
+- PowerShell
+
 **Implementation**
 
 **Step 1:** Download hypervisor software (Oraclebox for this example):

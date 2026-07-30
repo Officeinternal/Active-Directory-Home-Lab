@@ -1,5 +1,7 @@
 # Active-Directory-Home-Lab
-**Objective: Build a functional Active Directory environment using virtual machines to simulate a real enterprise domain.**
+**Overview**
+
+This lab demonstrates the deployment of a Windows Server 2025 domain controller and the configuration of a functional Active Directory environment. The objective is to build a clean, foundational AD DS implementation suitable for enterprise environments and future expansion.
 
 **Lab Architecture**
 
@@ -15,6 +17,17 @@ Client: Windows 11
 - DNS pointed to DC
 - Domain‑joined
 
+**Objectives**
+
+- Deploy Windows Server 2025
+- Install and configure AD DS
+- Promote the server to a domain controller
+- Create organizational units, users, and security groups
+- Join a Windows 11 workstation to the domain
+- Validate domain functionality
+
+**Implementation**
+
 **Step 1:** Download hypervisor software (Oraclebox for this example):
 
 ![Screenshot 1](screenshots/1.png)
@@ -29,7 +42,7 @@ Client: Windows 11
 ![Screenshot 4](screenshots/4.png)
 ![Screenshot 5](screenshots/5.png)
 
-- Setup Admin account and password. (Ex. 3ggm@n123)
+- Setup Admin account and password. (Ex. P@ssword123!)
 
 **Step 4:** Create the Network for your Domain Controller (Domain Controller promotion was performed through Server Manager, but equivalent PowerShell commands are included for automation)
 
@@ -76,8 +89,8 @@ Or you can create AD and DC through server manager:
 
 ![Screenshot 17](screenshots/17.png)
 
-**Troubleshooting**
-*If you run into this issue, make sure to press a key when the text is displayed on the screen or you will receive this pop-up*
+**Troubleshooting Advice:**
+*If you run into a boot issue upon client start up, make sure to press a key when the text is displayed on the screen or you will receive this pop-up*
 
 ![Screenshot 16](screenshots/16.png)
 
@@ -104,6 +117,14 @@ Setup the host adapter to share the same dns address as your domain:
 ![Screenshot 23](screenshots/23.png)
 ![Screenshot 24](screenshots/24.png)
 ![Screenshot 25](screenshots/25.png)
+
+**What I Learned:**
+
+- Proper sequencing of AD DS deployment
+- Importance of DNS integration with Active Directory
+- Structuring OUs for scalable administration
+- Using PowerShell for user and group management
+- Domain join troubleshooting and verification
 
 ## Future Labs
 
